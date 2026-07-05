@@ -38,6 +38,6 @@ jobs:
           mv reports/gitleaks.fixed.sarif reports/gitleaks.sarif
 
       - name: Upload SARIF results
-        uses: github/codeql-action/upload-sarif@f83c2eb4c3a102c4f14e2f3e3d3a1a1a1a1a1a1a1a1a1a1a1
+        uses: github/codeql-action/upload-sarif@f83c2eb4c3a102c4f14e2f3e3d3a1a1a1a1a1a1a1a1a1a1a1a1
         with:
           sarif_file: reports/gitleaks.sarif
