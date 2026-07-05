@@ -4,10 +4,13 @@ updates:
     directory: /android/app
     schedule:
       interval: weekly
+
   - package-ecosystem: gradle
     directory: /android
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
 
   - package-ecosystem: github-actions
     directory: /.github/workflows
@@ -15,3 +18,4 @@ updates:
       interval: weekly
     cooldown:
       default-days: 7
+      interval: weekly
