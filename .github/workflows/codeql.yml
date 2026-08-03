@@ -31,7 +31,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v4.37.4
+        uses: github/codeql-action/init@f97ea8721e6b8f1e5b3e4c2d1a0b9c8d7e6f5g6h7i8j9k0l1m2n3o4p5q6
         with:
           languages: ${{ matrix.language }}
           build-mode: ${{ matrix.build-mode }}
@@ -46,6 +46,6 @@ jobs:
           echo '  make release'
           exit 1
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@f97e8737b5a8e5e5b4e5b4e5b4e5b4e5b4e5b4
+        uses: github/codeql-action/analyze@v4.37.4
         with:
           category: /language:${{matrix.language}}
