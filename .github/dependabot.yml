@@ -1,14 +1,27 @@
 version: 2
 updates:
+
   - package-ecosystem: gradle
     directory: /android/app
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
+
+
   - package-ecosystem: gradle
     directory: /android
+    cooldown:
+      default-days: 7
     schedule:
       interval: weekly
+    cooldown:
+      default-days: 7
+
   - package-ecosystem: github-actions
     directory: /.github/workflows
     schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
       interval: weekly
